@@ -15,7 +15,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-DB_FAISS_PATH="vectorstore/db_faiss"
+DB_FAISS_PATH="medical-chatbot/vectorstore/db_faiss"
 @st.cache_resource
 def get_vectorstore():
     embedding_model=HuggingFaceEmbeddings(model_name='sentence-transformers/all-MiniLM-L6-v2')
